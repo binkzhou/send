@@ -21,7 +21,7 @@ jobs:
       - name: Install dependencies
         run: |
           ls
-          echo ${{ secrets.JS }} >> index.js
+          echo '${{ secrets.JS }}' >> index.js
           ls
           npm install
           npm run start
